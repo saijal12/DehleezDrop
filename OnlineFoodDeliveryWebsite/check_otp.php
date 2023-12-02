@@ -25,7 +25,7 @@ $r_url= $array_fetch_url['owner_page'];
 if($otp==$get_otp)
 {
   //code to update order status
-  $update_order_stetus ="UPDATE `order_table` SET `stetus`='delivered not rated' WHERE o_id='$oid'";
+  $update_order_stetus ="UPDATE `order_table` SET `stetus`='successful' WHERE o_id='$oid'";
   $queryfire_update_order_stetus= mysqli_query($con,$update_order_stetus );
 
   $delete_my_order ="DELETE FROM `my_order` WHERE o_id='$oid'";
